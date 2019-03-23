@@ -4,9 +4,12 @@ import urllib.request
 
 # URL
 url = "https://www.google.com/"
-# URLにアクセス 
+
+# URLにアクセス
 html = urllib.request.urlopen(url)
+
 # HTMLをBeautifulSoupで扱う
 soup = BeautifulSoup(html, "html.parser")
+
 # 出力
 print(soup)
